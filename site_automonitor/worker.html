@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOMONITOR-M</title>
+    <link rel="shortcut icon" href="img/icono.png">
+    <link rel="stylesheet" href="fuentes/style.css">
+    <link rel="stylesheet" href="fuentes/font2/style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_container">
+                <div class="logo">
+                    <a href="principal.html"><img src="img/logo_automonitor.jpg" alt="automonitor-m"></a>
+                </div>
+
+                <div class="usuario">
+                    <p><i class="icon-user"></i> usuario</p>
+                    <a href="#">cerrar sesión</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="workers">
+            <h3>Concentrador 4</h3>
+            <p class="actualizacion">Ultima Actualización: </p>
+            <div class="estados2">
+                <div class="estado">
+                    <i class="icon-checkmark activo"></i>
+                    <div>
+                        <p>Activo</p>
+                        <span>20</span>
+                    </div>
+                </div>
+
+                <div class="estado">
+                    <i class="icon-warning inactivo"></i>
+                    <div>
+                        <p>Inactivo</p>
+                        <span>20</span>
+                    </div>
+                </div>
+
+                <div class="estado">
+                    <i class="icon-stats-dots total"></i>
+                    <div>
+                        <p>Total</p>
+                        <span>200TH/s</span>
+                    </div>
+                </div>
+
+                <div class="estado">
+                    <i class="icon-thermometer temp"></i>
+                    <div>
+                        <p>Temperatura</p>
+                        <span>30°C</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="otros">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="sonoff icon-switch"></label>
+                <a href="pm.html"><img src="img/pm-icon.png" alt="icono-pm" class="pm"></a>
+            </div>
+
+            <div class="container" id="container">
+                <ul>
+                    <li class="actual">Worker1 <div class="status bg-green"></div>
+                    </li>
+                    <li>Worker2 <div class="status bg-green"></div>
+                    </li>
+                    <li>Worker3 <div class="status bg-red"></div>
+                    </li>
+                    <li>Worker4 <div class="status bg-green"></div>
+                    </li>
+                    <li>Worker5 <div class="status bg-green"></div>
+                    </li>
+                    <li>Worker6 <div class="status bg-green"></div>
+                    </li>
+                    <li>Worker7 <div class="status bg-green"></div>
+                    </li>
+                    <li> <i class="icon-plus"></i>Agregar</li>
+                </ul>
+            </div>
+
+            <div class="menu" id="menu">
+                <i class="icono icon-menu"></i>
+            </div>
+        </div>
+
+        <div class="worker">
+            <h1>Worker1 <sup class="status bg-green" title="activo"></sup> </h1>
+
+            <div class="acciones">
+                <a href="#"><i class="icon-pencil" title="modificar"></i></a>
+                <a href="#"><i class="icon-cross" title="eliminar"></i></a>
+                <a href="#"><i class="icon-copy" title="copiar"></i></a>
+                <button class="reset"> Reboot</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>IP</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td>s9</td>
+                        <td>172.16.20.01</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hashrate</th>
+                        <th colspan="3">Temperaturas</th>
+                        <th>Elapsed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>16 THs</td>
+                        <td>75ºC</td>
+                        <td>80ºC</td>
+                        <td>75ºC</td>
+                        <td>1h25m</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="filtros-grafica">
+                <select name="variable" id="">
+                    <option disabled selected>Elija variable a graficar</option>
+                </select>
+
+                <label for="desde">Desde: <input type="date" name="Desde" id=""></label>
+                <label for="hasta">Hasta: <input type="date" name="hasta" id=""></label>
+
+            </div>
+
+            <div class="grafica"></div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.instagram.com/automatroni.ca/" target="_blank"><i class="icon icon-instagram"></i></a>
+            <a href="https://ve.linkedin.com/company/automatroni-c-a" target="_blank"><i class="icon icon-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC8pUBavci6XWVjfsyofnNwA/about?view_as=subscriber" target="_blank"><i class="icon icon-youtube"></i></a>
+            <a href="https://twitter.com/Automatroni" target="_blank"><i class="icon icon-twitter"></i></a>
+            <a href="https://wa.me/+5804123135985" target="_blank"><i class="icon icon-whatsapp"></i></a>
+        </div>
+        <p>Todos los derechos reservados &#169 Diseño y desarrollo por <a href="http://www.automatroni.com"
+                target="_blank">Automatroni, C.A.</a> </p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
